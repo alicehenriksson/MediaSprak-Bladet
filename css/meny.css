@@ -1,0 +1,84 @@
+.flex-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+#meny {
+   height: var(--meny-heigth);
+   background-color: var(--color6);
+   border-radius: 10px;
+   border: 4px var(--color3) solid;
+   max-width: 1200px;
+   width: 97%;
+   margin: 0 auto 0 auto;
+   position: fixed;
+   top: 3rem;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1;
+   transition: 0.5s;
+}
+#meny h1 {
+   font-family: var(--font2);
+   font-size: 2rem;
+   line-height: var(--meny-height);
+   color: var(--color1);
+}
+#meny h1:hover {
+   color: var(--color3);
+   cursor: pointer;
+}
+#menyknapp {
+   align-self: center;
+   text-align: center;
+   margin-left: 5%;
+}
+#logoholder {
+   height: 3rem;
+   background-color: white;
+   padding: 0.3rem;
+   transform: scale(1.5);
+   border: 3px var(--color3) solid;
+   border-radius: 4px;
+}
+#orangebox {
+   align-self: center;
+   text-align: center;
+   margin-right: 5%;
+}
+#orangebox a {
+   text-decoration: none;
+}
+#orangebar {
+   height: 1.8rem;
+   background-color: var(--color3);
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   color: var(--color1);
+   text-align: center;
+   line-height: 1.8rem;
+   font-family: var(--font1);
+   font-size: 0.8rem;
+}
+@media only screen and (max-width: 768px) {
+   #logoholder {height: 2rem;}
+   #meny h1, #meny h2 {font-size: 1.5rem;}
+   #meny {
+      top: 1rem;
+   }
+   #orangebar {
+      font-size: 0.6rem;
+   }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+   #logoholder {height: 2.5rem;}
+   #meny h1, #meny h2 {font-size: 1.8rem;}
+   #meny {
+      top: 2rem;
+   }
+   #orangebar {
+      font-size: 0.7rem;
+   }
+}
